@@ -1,0 +1,60 @@
+/*  ESTILOS REFERENTES AO BODY E AO DOCUMENTO EM SI - DE USO GERAL    */
+:root {
+    --cor-bodygradient: -webkit-gradient(linear, left top, left bottom, from(rgba(165, 165, 165, 0.603)), to(rgb(243, 243, 243))) fixed;
+    --cor-font-body: rgba(18, 18, 18, 0.884);
+
+}
+
+body.dark {
+    --cor-bodygradient: -webkit-gradient(linear, left top, left bottom, from(#2d3548), to(#2d3548d5)) fixed;
+    --cor-font-body: antiquewhite;
+
+}
+
+* {
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+
+
+body {
+    background: var(--cor-bodygradient);
+    color: var(--cor-font-body);
+    position: absolute;
+    transition: background 0.2s linear;
+
+}
+
+main {
+    position: absolute;
+    top: 10vh;
+   
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Roboto';
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    
+}
+
+h2 {
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
+
+
+@media (max-width: 999px) {
+    h1 {
+        font-size: 100%;
+    }
+
+    h2{
+        font-size: 70%;
+    }
+}
+
+

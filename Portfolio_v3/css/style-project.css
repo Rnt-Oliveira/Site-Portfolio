@@ -1,0 +1,296 @@
+main {
+    width: 100%;
+    height: 85%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}   
+
+.credit {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #000;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 700px;
+    max-width: 1200px;
+    width: calc(100% - 100px);
+    height: 562px;
+}
+
+.option {
+    position: relative;
+    overflow: hidden;
+    min-width: 50px;
+    max-width: 50px;
+    margin: 5px;
+    background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+    background-size: auto 10%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    object-fit: contain;
+
+}
+
+.option:nth-child(1) {
+    --defaultBackground: #ed5565;
+}
+
+.option:nth-child(2) {
+    --defaultBackground: #fc6e51;
+}
+
+.option:nth-child(3) {
+    --defaultBackground: #ffce54;
+}
+
+.option:nth-child(4) {
+    --defaultBackground: #2ecc71;
+}
+
+.option:nth-child(5) {
+    --defaultBackground: #5d9cec;
+}
+
+.option.active {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 900px;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+}
+
+.option.active .shadow {
+    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+
+.option.active .label {
+    bottom: 20px;
+    left: 20px;
+}
+
+.option.active .info>div {
+    left: 0px;
+    opacity: 1;
+}
+
+.option:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+    
+}
+
+.option:not(.active) img{
+    width: auto;
+    height: auto;
+}
+
+.option:not(.active) .shadow {
+    bottom: -40px;
+    box-shadow: inset 0 -120px 0 -120px black, inset 0 -120px 0 -100px black;
+}
+
+.option:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+}
+
+.option:not(.active) .info>div {
+    left: 20px;
+    opacity: 0;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: transparent;
+    color: var(--defaultBackground);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color: beige;
+
+}
+
+.info>div {
+    position: relative;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.main {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+    
+}
+
+.sub {
+    transition-delay: 0.1s;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 2%;
+
+}
+
+.option p {
+    line-height: 120%;
+}
+
+.option a {
+    font-size: 0.9rem;
+    transform: uppercase;
+    margin-bottom: 2%;
+    justify-content: center;
+    text-align: center;
+    color: #2ecc71;
+
+}
+
+.option a:hover {
+    color: #00ff6a;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+img{
+    width: calc(100%);
+}
+
+
+@media (max-width: 999px) {
+    main{
+        transform:scale(0.85);
+        padding:2%;
+        top: -8vh;
+        z-index: -1;
+    }
+
+    img{
+        object-fit: cover;
+        height: calc(100%);
+        width: calc(100%);
+    }
+
+    .options {
+        flex-direction: column;
+        height: 684px;
+
+    }
+
+    .option.active {
+        max-width: 900px;
+        max-height: 1000px
+
+    }
+
+    .option {
+        min-width: 40px;
+        max-width: 400px;
+        max-height: 50px;
+        margin: 5px;
+        
+    }
+
+    .option:not(.active) a {
+        display: none;
+
+    }
+
+    
+
+}
+
+@media (max-width: 700px) {
+    main{
+        transform:scale(0.55);
+        padding:2%;
+        top: -8vh;
+        
+    }
+
+    img{
+        object-fit: cover;
+        height: calc(100%);
+        width: calc(100%);
+    }
+
+    .options {
+        flex-direction: column;
+        height: 684px;
+    }
+
+    .option.active {
+        max-width: 900px;
+        max-height: 1000px
+
+    }
+
+    .option {
+        min-width: 40px;
+        max-width: 400px;
+        max-height: 50px;
+        margin: 5px;
+        
+    }
+
+    .option:not(.active) a {
+        display: none;
+
+    }
+
+
+
+}
+
+@media (max-width: 400px) {
+    main{
+        transform:scale(0.45);
+
+    }
+}
+
+@media (max-width: 290px) {
+    main{
+        transform:scale(0.38);
+    }
+}
+
+
