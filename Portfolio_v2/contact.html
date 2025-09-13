@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/resumeIcon.png" type="image/png">
+    <title>Renato Oliveira</title>
+
+    <!--     CDN LINK       -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!--    Reset Settings  -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--    GoogleFonts     -->
+    <!--    'Montserrat'    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat&family=Roboto&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <!--     CSS     -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style-contact.css">
+</head>
+
+<body>
+    <header>
+        <!--    BOTÃO MODO NOTURNO     -->
+        <div id="toggle-btn" class="fas fa-sun"></div>
+        <!------------------------------->
+        <!---------TÍTULO DA PÁGINA------------>
+        <div class="title">
+            <h1>Contato</h1>
+            <h2>Renato Oliveira</h2>
+        </div>
+        <!------------------------------->
+        <div id="navBarMenu">
+            <nav><!-- BOTÃO DA NAVBAR -->
+                <!---->
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <!---->
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="resume.html">Currículo</a></li>
+                    <li><a href="project.html">Projetos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!------------------------------->
+
+    </header>
+    <main id="container">
+
+        <div id="contato">
+
+            <a type="button" class="btnContact"
+                href="https://api.whatsapp.com/send/?phone=5521965364848&text&type=phone_number&app_absent=0"
+                target="_blank">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+            </a>
+
+            <a type="button" class="btnContact" href="https://www.linkedin.com/in/renato-oliveira-4529831aa/"
+                target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn">
+            </a>
+
+
+            <a type="button" class="btnContact" href="https://github.com/Rnt-Oliveira" target="_blank">
+                <img src="img/github.png" alt="GitHub">
+            </a>
+
+        </div>
+
+        <div id="form">
+            <form id="formulario" action="https://formsubmit.co/38257eadae552abf3e64d716342a9a7e" method="POST" name="form" data-form>
+
+                <input type="hidden" name="_next" value="https://oliveirarenato.com.br/success.html">
+                <!-- Link da Página de Contato -->
+                <h1 class="form-title">Me envie uma proposta</h1>
+                <label for="cliente"><span class="form">Nome e Sobrenome:</span></label>
+                <input type="text" id="cliente" name="name" class="input-padrao" required
+                    autocomplete="additional-name">
+
+                <label for="email"><span class="form">E-mail:</span></label>    
+                <input type="email" id="email" name="email" class="input-padrao" required
+                    placeholder="seuemail@dominio.com" autocomplete="email">
+
+                <label for="assunto"><span class="form">Assunto:</span></label>
+                <input type="text" id="assunto" name="subject" class="input-padrao" required>
+
+                <label class="mensagem">Mensagem:</label>
+                <textarea cols="50" rows="10" name="message" class="input-padrao"></textarea required>
+                            
+                        
+                        <button class="sendForm" href="#about" type="submit" value="Enviar" data-button>Enviar</button>
+                            
+                    </form>
+        </div>
+            
+    </main>
+
+    <footer>
+        <div id="footerConteiner">
+            <a href="https://www.oliveirarenato.com.br/" target="_blank"><img src="img/LogoBlack.png" class="footerImage" alt="Logo Criador"></a>
+        </div>
+    </footer>
+
+    <!--    JAVASCRIPT  -->
+    <script src="script/mobile-navbar.js"></script>
+    <script src="script/darkmode.js"></script>
+
+</body>
+
+</html>

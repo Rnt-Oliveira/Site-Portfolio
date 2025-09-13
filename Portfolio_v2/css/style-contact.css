@@ -1,0 +1,187 @@
+:root {
+    --cor-de-fundo-header: rgba(165, 165, 165, 0.5);
+
+}
+
+body.dark{
+    --cor-de-fundo-header: #222222be;
+
+}
+
+main {
+    top: 10vh;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+
+    
+}
+
+#form {
+    width: 100%;
+    height: 90%;
+    margin:auto;
+    position: fixed;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    z-index: -1;    
+}
+
+#formulario {
+    border: solid #1d90f5a2;
+    border-radius: 30px;
+    position: fixed;
+    width: calc(100% - 60%);
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    padding: 2% 2% 0% 2%;
+    background: var(--cor-de-fundo-header);
+}
+
+.form-title {
+    margin-bottom: 5%;
+
+
+}
+
+label{
+    margin-bottom: 1%;
+    margin-top: 2%;
+    letter-spacing: 3px;
+}
+
+textarea {
+    margin-bottom: 5%;
+    resize: vertical;
+    border: solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    overflow-y: auto;
+    width: 70%;
+    padding: 0.5%;
+
+}
+
+input {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 4%;
+    border: solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+
+}
+
+input:hover,
+input:focus
+ {
+    border-color: #1d90f5a2;
+    box-shadow: 0 0 0.3125rem #26344a88;
+    outline: none;
+
+}
+
+textarea:hover,
+textarea:focus {
+    border-color: #1d90f5a2;
+    box-shadow: 0 0 0.3125rem #26344a88;
+    outline: none;
+
+}
+
+.sendForm {
+    border: solid #1d90f5a2;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+    padding: 0.4rem;
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.sendForm:hover {
+    transform: scale(1);
+    transition: 0.5s;
+    border-color: goldenrod;
+    cursor: pointer;
+
+}
+
+.sendForm:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 0.3125rem #121a27f5;
+
+
+}
+.sendForm:disabled {
+    cursor: not-allowed;
+    background: #555b69;
+}
+
+#contato {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 2%;
+
+}
+
+.btnContact { 
+    top: 0;
+    background: transparent;
+    width: auto;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+
+}
+
+.btnContact:hover {
+    transform: scale(1.2);
+
+}
+
+.btnContact img {
+    width: 30px;
+}
+
+@media (max-width: 1100px) {
+    #formulario {
+        width: calc(100% - 40%);
+
+    }
+
+}
+
+@media (max-width: 700px) {
+    #formulario {
+        width: calc(100% - 10%);
+
+    }
+    input, textarea{
+        width: 85%;
+    }
+}

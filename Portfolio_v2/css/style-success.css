@@ -1,0 +1,66 @@
+main {
+    width: 100%;
+    height: 90%;      
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+
+}
+
+#thanks-page {
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+vertical-align: middle;
+margin-top: 5%;
+}
+
+
+
+h3 {
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10%;
+    font-size: 1.2rem;
+}
+
+.confirm-gif {
+    position: absolute;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    background: transparent;
+    opacity: 0.9;
+    top: 10vh;
+}
+
+#flutuante-reverso {
+    animation: none;
+    transition: 0.5s;
+    animation: float 0.8s ease-in-out infinite;
+}
+
+a>h3{
+    font-size: 1.3rem;
+    width: 100%;
+    margin-top: 30%;
+    color: #1d90f5a2;
+    text-shadow: none;
+}
+
+/*-----------------------------------------------------------*/
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-9px);
+    }
+}
