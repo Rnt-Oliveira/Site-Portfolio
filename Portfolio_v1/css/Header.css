@@ -1,0 +1,589 @@
+/*  CORES:
+darkslategray
+snow
+darkolivegreen
+grey11 1C1C1C
+black
+
+*/
+
+/*
+main > p {
+    seleciona o primeiro p dentro do main (pais e filhos)
+}
+img + p {
+    seleciona o primeiro parágrago que vem diretamente após a imagem (irmãos)
+}
+img ~ p {
+    seleciona todos os p que vem diretamente depois da imagem 
+}
+.sobre p:not(#missao) {
+    seleciona todos os parágros que não são o id missão ( perfeito para alterar conteúdos sem ser generalista)
+}
+*/
+
+/*      CALCULO NO CSS
+
+.utensilios {
+    width: calc(40% - 17px);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: snow;
+}
+    /*background: linear-gradient( to bottom, black 90%, dimgrey);*/
+
+/*      HEADER      */
+
+
+header {
+    top: 0;
+    width: 100%;
+    height: auto;
+    position: fixed;
+
+}
+
+#header-area {
+    text-align: center;
+    width: 100%;
+    height: 15%;
+    display: inline-flex;
+    background: url("bg.png");
+    position: fixed;
+    padding: auto;
+}
+
+.profile-foto {
+    width: 3vw;
+    border: solid;
+    border-radius: 50px;
+    border-width: 0.35vw;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    justify-content: center;
+    left: 48%;
+    margin-top: 0.5%;
+}
+
+
+/*-----------------------------DIV#NAVBAR-------------------------------------*/
+#navBar {
+    width: 70%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    position: relative;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+
+
+}
+
+#navBar ul {
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.8vw;
+
+}
+
+#navBar ul li {
+    list-style-type: none;
+    width: 20%;
+    margin: auto;
+
+}
+
+#navBar ul li:nth-child(2) {
+    margin-right: 11%;
+}
+
+.a-nav-menu {
+    position: relative;
+    cursor: default;
+    vertical-align: middle;
+}
+
+.nav-menu {
+    width: 70%;
+    margin: 0.5rem;
+    cursor: pointer;
+    background-color: rgba(70, 131, 180, 0);
+    font-size: 1rem;
+    color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.nav-menu:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.nav-menu:active {
+    color: steelblue;
+    transition: 0.1s;
+}
+
+/*------------------------------#NAVBAR-ICO-----------------------------------*/
+.nav-ico {
+    width: 20%;
+    margin: 0.5rem;
+    vertical-align: middle;
+
+}
+
+/*-------------------   PROFILE-CONTAT0     -------------------------*/
+
+#profile-contato {
+    display: flex;
+    position: fixed;
+    width: 50vw;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: rgba(70, 131, 180, 0);
+    left: 25%;
+    top: 10%;
+
+}
+
+#profile-contato ul {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+
+#profile-contato ul li {
+    width: auto;
+    list-style-type: none;
+    margin: auto;
+    background-color: rgba(70, 131, 180, 0);
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#profile-contato button {
+    border-radius: 50px;
+    width: auto;
+    background-color: rgba(70, 131, 180, 0);
+    height: 2.3vw;
+    border: none;
+    margin: auto;
+}
+
+#profile-contato button:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.linkedin-ico,
+.whatsapp-ico,
+.github-ico {
+    width: 1.5vw;
+    height: auto;
+    cursor: pointer;
+
+}
+
+/*-------------------------    BORDAS   ---------------------------------*/
+#header-area,
+#profile-contato,
+#navBar,
+.linkedin,
+.whatsapp,
+.github,
+.nav-menu,
+footer {
+    border: none;
+
+}
+
+
+/*---------------------------   RESPONSIVIDADE   ------------------------------------*/
+
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+    #navBar {
+        justify-content: center;
+    }
+
+    #navBar {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    #navBar ul li button {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        border: none;
+    }
+
+    .profile-foto {
+        width: 5%;
+        right: 45%;
+        left: 47%;
+        border: solid 5px;
+
+    }
+
+    #navBar img {
+        width: 20%;
+    }
+
+    #header-area {
+        padding-top: 1%;
+        width: 100%;
+        height: 20%;
+    }
+
+    .nav-menu {
+        font-size: 100%;
+        width: 100%;
+    }
+
+    #profile-contato {
+        margin-bottom: 5%;
+
+    }
+
+
+    #profile-contato ul li img {
+        width: 3vw;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile-contato ul li {
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+    }
+
+    #profile-contato button {
+        width: 10%;
+        height: 10%;
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile-contato ul {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        top: 3vw;
+
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1300px) {
+    .profile-foto {
+        width: 5%;
+        right: 45%;
+        left: 47%;
+        border: solid 5px;
+
+    }
+
+    #navBar img {
+        width: 35%;
+    }
+
+    #header-area {
+        padding-top: 1%;
+        width: 100%;
+        height: 20%;
+    }
+
+    .nav-menu {
+        font-size: 100%;
+        width: 100%;
+    }
+
+    #navBar {
+        width: 100%;
+        margin-left: auto;
+        margin-right: 2%;
+        margin-bottom: auto;
+        justify-self: center;
+        position: relative;
+        right: auto;
+
+    }
+
+    #navBar ul li button {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        border: none;
+    }
+
+    #navBar ul li {
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    #navBar ul li:nth-child(2) {
+        margin-left: 5%;
+    }
+
+    #profile-contato {
+        margin-bottom: 5%;
+
+    }
+
+    #profile-contato ul li img {
+        width: 3vw;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile-contato ul li {
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+    }
+
+    #profile-contato button {
+        width: 10%;
+        height: 10%;
+    }
+
+    #profile-contato ul {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        top: 4vw;
+
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+
+    .profile-foto,
+    #navBar img {
+        display: none;
+
+    }
+
+    #header-area {
+        padding-top: 2%;
+        width: 100%;
+    }
+
+    .nav-menu {
+        font-size: 100%;
+        width: 100%;
+    }
+
+    #navBar {
+        width: 100%;
+        margin-left: auto;
+        margin-right: 2%;
+        margin-bottom: auto;
+        justify-self: center;
+        position: relative;
+        right: auto;
+        transform: scale(0.9);
+    }
+
+    #navBar ul li button {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        border: none;
+    }
+
+    #navBar ul li {
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    #navBar ul li:nth-child(2) {
+        margin-left: 5%;
+    }
+
+    #profile-contato {
+        margin-bottom: 5%;
+
+    }
+
+    #profile-contato ul li img {
+        width: 6vw;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #profile-contato ul li {
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        left: auto;
+        right: auto;
+
+    }
+
+    #profile-contato button {
+        width: 10%;
+        height: 10%;
+
+
+    }
+
+    #profile-contato ul {
+        width: 100%;
+        margin-bottom: 15%;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+
+    .profile-foto,
+    #navBar img {
+        display: none;
+
+    }
+
+    #header-area {
+        padding-top: 2%;
+        width: 100%;
+
+    }
+
+    .nav-menu {
+        font-size: 70%;
+        width: 100%;
+
+    }
+
+    #navBar {
+        width: 100%;
+        margin-left: auto;
+        margin-right: 2%;
+        margin-bottom: auto;
+        justify-self: center;
+        position: relative;
+        right: auto;
+    }
+
+    #navBar ul li button {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        border: none;
+
+    }
+
+    #navBar ul li {
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    #navBar ul li:nth-child(2) {
+        margin-left: 5%;
+    }
+
+    #profile-contato {
+        right: auto;
+        left: 10%;
+        width: auto;
+        margin-left: 28%;
+        margin-top: 5%;
+    }
+
+    #profile-contato ul li img {
+        width: 6vw;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile-contato ul li {
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        margin-left: 60%;
+        margin-right: 60%;
+    }
+
+    #profile-contato button {
+        width: 10%;
+        height: 10%;
+    }
+
+    #profile-contato ul {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        bottom: 5vw;
+    }
+}
+
+

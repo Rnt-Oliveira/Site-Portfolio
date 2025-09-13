@@ -1,0 +1,34 @@
+/*-------------------------------FOOTER-----------------------------------*/
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-family: 'Cinzel Decorative', sans-serif;
+    opacity: 0.9;
+    background: url("bg.png");
+    color: antiquewhite;
+}
+.footer{
+    margin-top: 0%;
+}
+
+.footer-area {
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 0.6vw;
+    margin: 0;
+    padding: 0 ;
+}
+
+.logoFooter {
+    width: 20px;
+    margin-bottom: 0.1%;
+
+}
+
+@media screen and (max-width: 1200) {
+    h6 .footer-area {
+        font-size: 50%;
+    }
+}

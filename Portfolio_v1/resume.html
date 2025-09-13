@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/resumeIcon.png" type="image/png">
+    <title>R.Oliveira</title>
+    <!--        Reset Settings      -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--              Google Fonts            -->
+    <!--         'Cinzel Decorative'               -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Roboto&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <!--         'Montserrat'           -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat&family=Roboto&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <!--          Importados    -->
+
+    <!-- CSS home-->
+    <link href="css/Header.css" rel="stylesheet">
+    <link href="css/Footer.css" rel="stylesheet">
+    <link href="css/Main.css" rel="stylesheet">
+    <link href="css/Resume.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+    <!------------------HEADER--------------------->
+    <header>
+        <fieldset id="header-area"><!--------HEADER-BOX--------->
+            <div><!------------------FOTO--------------------->
+                <img src="img/perfil.JPG" alt="Foto do Perfil" class="profile-foto">
+            </div>
+
+            <div id="navBar"><!------------------NAV BAR--------------------->
+                <ul>
+                    <li>
+                        <a href="index.html" class="a-nav-menu"><button class="nav-menu"><img src="img/home.png"
+                                    class="nav-ico">Home</button></a>
+                    </li>
+
+                    <li>
+                        <a href="resume.html" class="a-nav-menu"><button class="nav-menu"><img src="img/curriculo.png"
+                                    class="nav-ico">Currículo</button></a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html" class="a-nav-menu"><button class="nav-menu"><img src="img/projeto.png"
+                                    class="nav-ico">Projetos</button></a>
+                    </li>
+
+                    <li>
+                        <a href="" class="a-nav-menu"><button onclick="gerarPDF()" class="nav-menu" value="print"><img
+                                    src="img/download.png" class="nav-ico">Download</button></a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!--------------------------------------------------------------------------------->
+
+            <div id="profile-contato"><!------------------CONTATO--------------------->
+                <ul>
+                    <li>
+                        <button type="button" href="https://www.linkedin.com/in/renato-oliveira-4529831aa/"><a
+                                href="https://www.linkedin.com/in/renato-oliveira-4529831aa/" target="_blank"><img
+                                    src="img/linkedin.png" class="linkedin-ico"></a></button>
+
+                    </li>
+                    <li>
+                        <button type="button"><a
+                                href="https://api.whatsapp.com/send/?phone=5521965364848&text&type=phone_number&app_absent=0"
+                                target="_blank"><img src="img/whatsapp.png" class="whatsapp-ico"></a></button>
+
+                    </li>
+                    <li>
+                        <button type="button"><a href="https://github.com/Rnt-Oliveira" target="_blank"><img
+                                    src="img/github.png" class="github-ico"></a></button>
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </fieldset>
+    </header>
+    <main><!--MAIN DA PAGE-->
+        <fieldset class="c-main-area">
+            <section id="formacao">
+                <div>
+                    <h1><span class="bold">Formação Acadêmica</span></h1>
+                    <ul>
+                        <li>
+                            <h2><span class="bold">Análise e Desenvolvimento de Sistemas</span></h2>
+                            <p>
+                                Ensino Superior - Faculdade Descomplica
+                                Previsão de conclusão - 03/2025 (Cursando)
+                            </p>
+                        </li>
+                        <br>
+                        <li>
+                            <h2><span class="bold">Administração</span></h2>
+                            <p>
+                                Ensino Superior - UNISUAM
+                                Previsão de conclusão - 12/2024 (Cursando)
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="experiencia">
+                <div class="trabalhos">
+                    <h1><span class="bold">Caminho Profissional</span></h1>
+                    <ul>
+                        <li class="trabalho">
+                            <h3>iPlace - Shopping RioSul / Grupo Herval</h3>
+                            <p>06/21</p>
+                            <p>Analísta Técnico</p>
+                        </li>
+
+                        <li class="trabalho">
+                            <h3>Livraria Leitura / Ouvidor</h3>
+                            <p>10/2020 - 03/2021</p>
+                            <p>Livreiro</p>
+                        </li>
+
+                        <li class="trabalho">
+                            <h3>Lojas Americanas</h3>
+                            <p>03/2019 - 09/2020</p>
+                            <p>Operador de Loja</p>
+                        </li>
+
+                        <li class="trabalho">
+                            <h3>PC Help Soluções Tecnológicas</h3>
+                            <p>04/2013 - 12/2018</p>
+                            <p>Técnico de Informática - Autônomo</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <section id="certificados">
+                <!------------------------------APPLE------------------------------------->
+                <h1 class="certs"><span class="bold">Certificados</span></h1>
+                <div class="certificados-conteiner">
+                    <ul class="linha">
+                        <li class="cursos">
+                            <div class="style">
+                                <img class="frame" src="certificados/Certificado Apple.jpg">
+                                <div class="curso">
+                                    <h3><span class="bold">iOS & Macintosh</span></h3>
+                                    <p>Apple / iPlace</p>
+                                    <p>07/2021</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <img class="frame" src="certificados/Certificado Apple.jpg">
+                                <div class="curso">
+                                    <h3><span class="bold">MacBook, Imac, MacPro e iPhone</span></h3>
+                                    <p>Apple / iPlace</p>
+                                    <p>06/2021</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-------------------------------------------------------------------->
+                        <!------------------------------FIAP------------------------------------->
+                        <li class="cursos">
+                            <div class="style">
+                                <img class="frame"
+                                    src="certificados/Certificado FIAP - Gestão e Infraestrutura de TI.png">
+                                <div class="curso">
+                                    <a class="botao-cursos"
+                                        href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/35096/a0b99cb1a241058fbdc098d625bbaf3b/certificado.png"
+                                        target="_blank">
+                                        <h3><span class="bold">Gestão e Infraestrutura de T.I</span></h3>
+                                        <p>FIAP Online</p>
+                                        <p>12/2021</p>
+                                        <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/35096/a0b99cb1a241058fbdc098d625bbaf3b/certificado.png"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/44385/fcd3450c7642143756958fd9fb43faf6/certificado.png"
+                                    target="_blank">
+                                    <img class="frame" src="certificados/Certificado FIAP - Big Data & Analytics.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Big Data & Analytics</span></h3>
+                                        <p>FIAP Online</p>
+                                        <p>02/2022</p>
+                                        <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/44385/fcd3450c7642143756958fd9fb43faf6/certificado.png"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <!----------------------------------------------------------------------------->
+                        <!----------------------------------LINKEDIN------------------------------------------->
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://www.linkedin.com/learning/certificates/30becd0ac010ace935a31ece0ca81aa58e1f1181f425d5d939822f06c51a33e9"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado LinkedIn - Fundamentos da Programacao.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Fundamentos da Programação</span></h3>
+                                        <p>LinkedIn Learning</p>
+                                        <p>09/2022</p>
+                                        <a href="https://www.linkedin.com/learning/certificates/30becd0ac010ace935a31ece0ca81aa58e1f1181f425d5d939822f06c51a33e9"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://www.linkedin.com/learning/certificates/c9c34816071a140467ab4b155319de1fa4fabd3ae27f2a5e253ea6ed3596e95d"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado LinkedIn - Fundamentos de Programacao Design Orientado a Objetos.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Fundamentos da Programação Orientado a Objetos</span>
+                                        </h3>
+                                        <p>LinkedIn Learning</p>
+                                        <p>09/2022</p>
+                                        <a href="https://www.linkedin.com/learning/certificates/c9c34816071a140467ab4b155319de1fa4fabd3ae27f2a5e253ea6ed3596e95d"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://www.linkedin.com/learning/certificates/e16ec7fdee1dd447d4de50e9368295843465489ecaffd79a429d1d8a80e06370"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado LinkedIn - JavaScript -  Formação Básica.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">JavaScript - Formação Básica</span></h3>
+                                        <p>LinkedIn Learning</p>
+                                        <p>08/2022</p>
+                                        <a href="https://www.linkedin.com/learning/certificates/e16ec7fdee1dd447d4de50e9368295843465489ecaffd79a429d1d8a80e06370"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://www.linkedin.com/learning/certificates/e5ae8738731042b9ecf6d353de02dec103c49e2c19c896aa6de25d4ac0e28f5a"
+                                    target="_blank">
+                                    <img class="frame" src="certificados/Certificado LinkedIn - Descubra o Python.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Descubra Python</span></h3>
+                                        <p>LinkedIn Learning</p>
+                                        <p>09/2022</p>
+                                        <a href="https://www.linkedin.com/learning/certificates/e5ae8738731042b9ecf6d353de02dec103c49e2c19c896aa6de25d4ac0e28f5a"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://www.linkedin.com/learning/certificates/908cc29d4d4fe774b2ff3722511d45f0b25f2bffd5dd7fc85ad09437b7cdaf9f?trk=share_certificate"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado LinkedIn - Git e GitHub - Básico.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Git & GitHub - Básico</span></h3>
+                                        <p>LinkedIn Learning</p>
+                                        <p>08/2022</p>
+                                        <a href="https://www.linkedin.com/learning/certificates/908cc29d4d4fe774b2ff3722511d45f0b25f2bffd5dd7fc85ad09437b7cdaf9f?trk=share_certificate"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <!----------------------------------------------------------------------------->
+                        <!---------------------------------FACULDADE------------------------------------->
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://microcertificado.descomplica.com.br/af7f5b409935348b5bc1a10543db62766033032818e09d20670b230a9408a21d"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado DESCOMPLICA - Programming Basics.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Programming Basics</span></h3>
+                                        <p>Faculdade Descomplica</p>
+                                        <p>06/2022</p>
+                                        <a href="https://microcertificado.descomplica.com.br/af7f5b409935348b5bc1a10543db62766033032818e09d20670b230a9408a21d"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://microcertificado.descomplica.com.br/4b34c8a2b2e6590cfb1ee947e318550b86e9e1385486fa14862300568f3a1423"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado DESCOMPLICA - Arquitetura e Organização de Computadores.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Arquitetura e Organização de Computadores</span></h3>
+                                        <p>Faculdade Descomplica</p>
+                                        <p>10/2022</p>
+                                        <a href="https://microcertificado.descomplica.com.br/4b34c8a2b2e6590cfb1ee947e318550b86e9e1385486fa14862300568f3a1423"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://microcertificado.descomplica.com.br/fc0da1cbb2db922813ff9a3d8e1807d5b041df4b2e13131c8a85d15b3d839da2"
+                                    target="_blank">
+                                    <img class="frame" src="certificados/Certificado DESCOMPLICA - DB Devoloper.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">DB Devoloper</span></h3>
+                                        <p>Faculdade Descomplica</p>
+                                        <p>12/2022</p>
+                                        <a href="https://microcertificado.descomplica.com.br/fc0da1cbb2db922813ff9a3d8e1807d5b041df4b2e13131c8a85d15b3d839da2"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://microcertificado.descomplica.com.br/3a7f0b5b8e9dcd4f03ac20c7efcb50ff7232f70f2419be9ecfbe0a99f83c2f3f"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado DESCOMPLICA - Object-Oriented Devoloper.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Object-Oriented Devoloper</span></h3>
+                                        <p>Faculdade Descomplica</p>
+                                        <p>03/2023</p>
+                                        <a href="https://microcertificado.descomplica.com.br/3a7f0b5b8e9dcd4f03ac20c7efcb50ff7232f70f2419be9ecfbe0a99f83c2f3f"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <!----------------------------------------------------------------------------->
+                        <!---------------------------------ALURA-------------------------------------------->
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/023d4568-e59d-410e-bad3-4c4b03a2d802"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado Alura - Lógica de programação_ comece em lógica com o jogo Pong e Javascript.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Lógica de Programação - Jogo Pong e JavaScript</span>
+                                        </h3>
+                                        <p>Alura</p>
+                                        <p>09/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/023d4568-e59d-410e-bad3-4c4b03a2d802"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/8c99fee6-65b8-40c1-9a68-bb209edb6c94"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado Alura - Arquitetura de Computadores.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Arquitetura de Computadores</span></h3>
+                                        <p>Alura</p>
+                                        <p>10/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/8c99fee6-65b8-40c1-9a68-bb209edb6c94"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/d463e5c5-9883-4308-94cf-d5b7eef8e852"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado Alura - Linux I - Conhecendo e utilizando o temirnal.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Linux I - Conhecendo e utilizando o terminal</span></h3>
+                                        <p>Alura</p>
+                                        <p>10/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/d463e5c5-9883-4308-94cf-d5b7eef8e852"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/5db316ef-9299-426f-bec9-eb68e426a074"
+                                    target="_blank">
+                                    <img class="frame" src="certificados/Certificado Alura - Git & GitHub.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">Git & GitHub</span></h3>
+                                        <p>Alura</p>
+                                        <p>11/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/5db316ef-9299-426f-bec9-eb68e426a074"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/02d397b7-aed1-4d13-9273-529bb0f78353"
+                                    target="_blank">
+                                    <img class="frame" src="certificados/Certificado Alura - HTML5 e CSS3 - 1º.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">HTML5 & CSS3 - 1º</span></h3>
+                                        <p>Alura</p>
+                                        <p>10/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/02d397b7-aed1-4d13-9273-529bb0f78353"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/e20645a6-f4f6-4712-b303-58e3e8b2646e"
+                                    target="_blank">
+                                    <img class="frame" src="certificados/Certificado Alura - HTML5 e CSS3 - 2º.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">HTML5 & CSS3 - 2º</span></h3>
+                                        <p>Alura</p>
+                                        <p>10/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/e20645a6-f4f6-4712-b303-58e3e8b2646e"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/ece13b79-097a-44ee-83aa-f19341183226"
+                                    target="_blank">
+                                    <img class="frame" src="certificados/Certificado Alura - HTML5 e CSS3 - 3º.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">HTML5 & CSS3 - 3º</span></h3>
+                                        <p>Alura</p>
+                                        <p>10/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/ece13b79-097a-44ee-83aa-f19341183226"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/f461ae5a-bbc7-4262-8959-e35054736bab"
+                                    target="_blank">
+                                    <img class="frame" src="certificados/Certificado Alura - HTML5 e CSS3 - 4º.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">HTML5 & CSS3 - 4º</span></h3>
+                                        <p>Alura</p>
+                                        <p>11/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/f461ae5a-bbc7-4262-8959-e35054736bab"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/6a159533-b4a9-4615-bb72-f9cffa3f4af8"
+                                    target="_blank">
+                                    <img class="frame" src="certificados/Certificado Alura - JavaScript para WEB.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">JavaScript para WEB</span></h3>
+                                        <p>Alura</p>
+                                        <p>11/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/6a159533-b4a9-4615-bb72-f9cffa3f4af8"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/f4720252-7cb7-4939-896a-59537d619c91"
+                                    target="_blank">
+                                    <img class="frame" src="certificados/Certificado Alura - Java, JRE e JDK.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">JAVA, JRE e JDK</span></h3>
+                                        <p>Alura</p>
+                                        <p>12/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/f4720252-7cb7-4939-896a-59537d619c91"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cursos">
+                            <div class="style">
+                                <a class="botao-cursos"
+                                    href="https://cursos.alura.com.br/certificate/20cbd048-4f08-4c3d-aa40-456d710d8cec"
+                                    target="_blank">
+                                    <img class="frame"
+                                        src="certificados/Certificado Alura - JAVA OO ENTENDO A ORIENTAÇÃO A OBJETOS.png">
+                                    <div class="curso">
+                                        <h3><span class="bold">JAVA OO - Entendento a Orientação a Objetos</span></h3>
+                                        <p>Alura</p>
+                                        <p>12/2022</p>
+                                        <a href="https://cursos.alura.com.br/certificate/20cbd048-4f08-4c3d-aa40-456d710d8cec"
+                                            target="_blank"><img class="link-certificado" src="img/link.png"></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+
+        </fieldset>
+ <!---->
+        <div id="PDF">
+            <div id="dadosPDF">
+                <hr class="hr1">
+                <div class="PDF-intro"><!--APRESENTAÇÃO-->
+                    <h1 class="PDF-nome" id="h1">Renato Alves de Oliveira</h1>
+                    <p id="p">Sou desenvolvedor em formação e quero contribuir para a sua empresa ou projeto, ampliando
+                        ainda mais meus conhecimentos profissionais, me capacitando em um ambiente de alta
+                        produtividade e te ajudando a alcançar resultados efetivos.</p>
+                    <div class="PDF-link">
+                        <!--QR CODE DO SITE-->
+                        <iframe type="image/jpg" src="img/QRSITE.jpg" href="https://oliveirarenato.com.br/index.html"
+                            width="300" height="300" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"></iframe>
+                    </div>
+                    <p class="link-text">Link para o site.</p>
+                </div>
+                <br>
+                <br>
+                <hr class="hr2">
+                <div class="PDF-cursos"><!--FORMAÇÃO-->
+                    <h2 id="h2">Formação</h2>
+                    <h3 id="h3">Análise e Desenvolvimento de Sistemas</h3>
+                    <p id="p">Ensino Superior - Faculdade Descomplica Previsão de conclusão - 03/2025 (Cursando)</p>
+                    <h3 id="h3">Administração</h3>
+                    <p id="p">Ensino Superior - UNISUAM Previsão de conclusão - 12/2024 (Cursando)</p>
+                </div>
+                <hr class="hr2">
+                <div class="PDF-resume"><!--EXPERIENCIA PROFISSIONAL-->
+                    <h2 id="h2">Experiência</h2>
+
+                    <h3 id="h3">iPlace - Shopping RioSul / Grupo Herval</h3>
+                    <p id="p">06/21</p>
+                    <p id="p">Analísta Técnico</p>
+                    <p id="p">Realizar manutenção em MacBook, Mac Pro, iMac e
+                        iPhone, administrar a assistência técnica junto ao
+                        grupo Herval e a Apple, supervisionar equipe de
+                        técnicos de informática, venda de equipamentos e
+                        serviços Apple e estreitar o relacionamento com o
+                        cliente através de feedback pós-atendimento.
+                    </p>
+
+                    <h3 id="h3">Livraria Leitura / Ouvidor</h3>
+                    <p id="p">10/2020 - 03/2021</p>
+                    <p id="p">Livreiro</p>
+                    <p id="p">Realizar manutenção em MacBook, Mac Pro, iMac e
+                        iPhone, administrar a assistência técnica junto ao
+                        grupo Herval e a Apple, supervisionar equipe de
+                        técnicos de informática, venda de equipamentos e
+                        serviços Apple e estreitar o relacionamento com o
+                        cliente através de feedback pós-atendimento.
+                    </p>
+
+                    <h3 id="h3">Lojas Americanas</h3>
+                    <p id="p">03/2019 - 09/2020</p>
+                    <p id="p">Operador de Loja</p>
+                    <p id="p">Atendimento ao público, vendas físicas e online,
+                        organização de departamentos e estoque, venda de
+                        garantia estendida, conhecimento de sistema
+                        específico da loja.
+                    </p>
+
+                    <h3 id="h3">PC Help Soluções Tecnológicas</h3>
+                    <p id="p">04/2013 - 12/2018</p>
+                    <p id="p">Técnico de Informática - Autônomo</p>
+                    <p id="p">Responsável por efetuar diversos tipos de reparos e
+                        configurações em computadores pessoais e de
+                        empresas, além de atendimento a clientes.</p>
+
+                </div>
+                <hr class="hr2">
+                <div class="PDF-certificados"><!--CERTIFICADOS-->
+                    <h2 id="h2">Certificados</h2>
+                    <ul class="linha">
+                        <!--APPLE-->
+                        <li class="coluna">
+                            <h3 id="h3">iOS & Macintosh</h3>
+                            <p id="p">Apple / iPlace</p>
+                            <p id="p">07/2021</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">MacBook, Imac, MacPro e iPhone</h3>
+                            <p id="p">Apple / iPlace</p>
+                            <p id="p">06/2021</p>
+                        </li>
+                        <!--FIAP-->
+                        <li class="coluna">
+                            <h3 id="h3">Big Data & Analytics</h3>
+                            <p id="p">FIAP Online</p>
+                            <p id="p">02/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Gestão de Infraestrutura de T.I</h3>
+                            <p id="p">FIAP Online</p>
+                            <p id="p">12/2021</p>
+                        </li>
+                        <!--LINKEDIN LEARNING-->
+                        <li class="coluna">
+                            <h3 id="h3">JavaScript - Formação Básica</h3>
+                            <p id="p">LinkedIn Learning</p>
+                            <p id="p">08/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Git & GitHub</h3>
+                            <p id="p">LinkedIn Learning</p>
+                            <p id="p">08/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Fundamentos da Programação</h3>
+                            <p id="p">LinkedIn Learning</p>
+                            <p id="p">09/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Fundamentos da Programação:
+                                Design Orientado a Objetos</h3>
+                            <p id="p">LinkedIn Learning</p>
+                            <p id="p">09/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Descubra Python</h3>
+                            <p id="p">LinkedIn Learning</p>
+                            <p id="p">09/2022</p>
+                        </li>
+                        <!--DESCOMPLICA-->
+                        <li class="coluna">
+                            <h3 id="h3">Programming Basics</h3>
+                            <p id="p">Faculdade Descomplica</p>
+                            <p id="p">06/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Especialista em Arquitetura e Organização de
+                                Computadores</h3>
+                            <p id="p">Faculdade Descomplica</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">DB Devoloper</h3>
+                            <p id="p">Faculdade Descomplica</p>
+                            <p id="p">12/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Object-Oriented Devoloper</h3>
+                            <p id="p">Faculdade Descomplica</p>
+                            <p id="p">03/2023</p>
+                        </li>
+                        <!--ALURA-->
+                        <li class="coluna">
+                            <h3 id="h3">Lógica de Programação: Comece em
+                                lógica com o jogo PONG e JAVASCRIPT</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">09/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Arquitetura e Organização de Computadores</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Linux I: Conhecendo e utilizando o terminal</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Git & GitHub</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">11/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">HTML5 & CSS3 - 1º</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">HTML5 & CSS3 - 2º</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">HTML5 & CSS3 - 3º</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">HTML5 & CSS3 - 4º</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">11/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">JavaScript para WEB</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">11/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">JAVA, JRE e JDK</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">12/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">JAVA OO - Entendento a Orientação a Objetos</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">12/2022</p>
+                        </li>
+
+                        <li class="coluna" id="escondido">
+                            <h3 id="h3"></h3>
+                            <p id="p"></p>
+                            <p id="p"></p>
+                        </li>
+                    </ul>
+                    <hr class="hr1">
+                </div>
+
+                <style>
+                    #h1 {
+                        font-size: 1.7rem;
+                        color: black;
+                        margin-bottom: 1.5rem;
+                        margin-top: 1.5rem;
+                    }
+
+                    #h2 {
+                        font-size: 1.4rem;
+                        font-weight: bold;
+                        color: black;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+
+                    }
+
+                    #h3 {
+                        font-size: 1.2rem;
+                        color: black;
+                        margin-top: 1.5rem;
+                        margin-bottom: 0.8rem;
+                        font-weight: bold;
+
+                    }
+
+                    #p {
+                        font-size: 1rem;
+                        color: black;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.5rem;
+
+                    }
+
+                    hr {
+                        display: inline-flex;
+                        vertical-align: middle;
+                        align-items: center;
+                        position: relative;
+                        left: auto;
+                        right: auto;
+                        width: 90%;
+                        margin-bottom: 0.5rem;
+                        margin-top: 0.5rem;
+                        font-weight: bolder;
+
+                    }
+
+                    #PDF {
+                        /*CONTEINER DA PAGINA*/
+                        width: 100%;
+                        display: flex;
+                        position: fixed;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: middle;
+                        height: 100%;
+                        overflow-y: scroll;
+                        overflow: hidden;
+                        left: auto;
+                        right: auto;
+
+                    }
+
+                    .hr1 {
+                        width: 85%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        vertical-align: middle;
+                        justify-content: center;
+                        background: linear-gradient(to right, #999999, #404040, #000000, #404040, #999999);
+                        border-width: 2px transparent center no-repeat;
+                    }
+
+                    .hr2 {
+                        margin-top: 1rem;
+                        width: 60%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        vertical-align: middle;
+                        justify-content: center;
+                        border-width: 2px transparent center no-repeat;
+                    }
+
+                    #dadosPDF {
+                        /*CONTEINER DOS DADOS*/
+                        text-align: center;
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        vertical-align: middle;
+                        flex-flow: row wrap;
+                        overflow-y: scroll;
+                        margin-bottom: 8rem;
+                        text-align: center;
+
+                    }
+
+                    .PDF-link {
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: middle;
+                        color: black;
+                        margin-top: 1.5rem;
+                        font-weight: bold;
+
+                    }
+
+                    .link-text {
+                        font-size: 1.2rem;
+
+
+                    }
+
+                    .PDF-intro {
+                        /*BOX DA APRESENTAÇÃO*/
+                        width: 90%;
+                        height: 40%;
+                        text-align: center;
+                        justify-content: center;
+                        padding: 2%;
+                        margin-bottom: 1.5rem;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .PDF-nome {
+                        font-weight: bold;
+                        font-size: 2rem;
+                    }
+
+                    .PDF-cursos {
+                        width: 90%;
+                        height: auto;
+                        margin-bottom: 1.5rem;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                    }
+
+                    .PDF-resume {
+                        width: 90%;
+                        height: auto;
+                        margin-bottom: 1.5rem;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin-left: auto;
+                        margin-right: auto;
+
+
+                    }
+
+                    .PDF-certificados {
+                        width: 90%;
+                        height: auto;
+                        margin-bottom: 1.5rem;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                    }
+
+                    .linha {
+                        display: flex;
+                        flex-flow: row wrap;
+                        vertical-align: middle;
+                        align-items: center;
+                        width: auto;
+                        margin: auto;
+                        padding: auto;
+
+                    }
+
+                    .coluna {
+                        left: auto;
+                        right: auto;
+                        width: 40%;
+                        text-align: center;
+                        display: inline;
+                        align-items: center;
+                        justify-content: center;
+                        margin: auto;
+                        padding: auto;
+
+                    }
+
+                    .escondido {
+                        display: none;
+                    }
+                </style>
+            </div>
+        </div>
+
+        <!---->
+
+        <!--        JAVASCRIPT      -->
+        <script src="JS/pdf.js"></script>
+        <!------------------------------------->
+    </main>
+    <footer><!--FOOTER-->
+        <fieldset class="footer">
+
+            <h6>
+                Criado por
+            </h6>
+            <h6 class="footer-area">Renato Oliveira.</h6>
+        </fieldset>
+    </footer>
+
+</body>
+
+</html>

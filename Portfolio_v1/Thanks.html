@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/resumeIcon.png" type="image/png">
+    <title>R.Oliveira</title>
+    <!--        Reset Settings      -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--              Google Fonts            -->
+    <!--         'Cinzel Decorative'               -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Roboto&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <!--         'Montserrat'           -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat&family=Roboto&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <!--          Importados    -->
+
+    <!-- CSS -->
+    <link href="css/Header.css" rel="stylesheet">
+    <link href="css/Footer.css" rel="stylesheet">
+    <link href="css/Main.css" rel="stylesheet">
+    <link href="css/Form.css" rel="stylesheet">
+    <link href="css/Thanks.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!------------------HEADER--------------------->
+    <header>
+        <fieldset id="header-area"><!--------HEADER-BOX--------->
+            <div><!------------------FOTO--------------------->
+                <img src="img/perfil.JPG" alt="Foto do Perfil" class="profile-foto">
+            </div>
+
+            <div id="navBar"><!------------------NAV BAR--------------------->
+                <ul>
+                    <li>
+                        <a href="index.html" class="a-nav-menu"><button class="nav-menu"><img src="img/home.png"
+                                    class="nav-ico">Home</button></a>
+                    </li>
+
+                    <li>
+                        <a href="resume.html" class="a-nav-menu"><button class="nav-menu"><img src="img/curriculo.png"
+                                    class="nav-ico">Currículo</button></a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html" class="a-nav-menu"><button class="nav-menu"><img src="img/projeto.png"
+                                    class="nav-ico">Projetos</button></a>
+                    </li>
+
+                    <li>
+                        <a href="" class="a-nav-menu"><button onclick="gerarPDF()" class="nav-menu"
+                                value="print"><img src="img/download.png" class="nav-ico">Download</button></a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!--------------------------------------------------------------------------------->
+
+            <div id="profile-contato"><!------------------CONTATO--------------------->
+                <ul>
+                    <li>
+                        <button type="button" href="https://www.linkedin.com/in/renato-oliveira-4529831aa/"><a
+                                href="https://www.linkedin.com/in/renato-oliveira-4529831aa/" target="_blank"><img
+                                    src="img/linkedin.png" class="linkedin-ico"></a></button>
+
+                    </li>
+                    <li>
+                        <button type="button"><a
+                                href="https://api.whatsapp.com/send/?phone=5521965364848&text&type=phone_number&app_absent=0"
+                                target="_blank"><img src="img/whatsapp.png" class="whatsapp-ico"></a></button>
+
+                    </li>
+                    <li>
+                        <button type="button"><a href="https://github.com/Rnt-Oliveira" target="_blank"><img
+                                    src="img/github.png" class="github-ico"></a></button>
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </fieldset>
+    </header>
+    <main><!--MAIN DA PAGE-->
+        <section id="thanks-page">
+            <fieldset class="thanks">
+
+                <button id="flutuante-reverso" onclick="window.location.href='http://127.0.0.1:5500/Home.html#about'"
+                    class="confirm-gif-button"><img src="img/sucesso.gif" class="confirm-gif"></button>
+                <h1 onclick="window.location.href='http://127.0.0.1:5500/Home.html#about'">Obrigado!</h1>
+                <br>
+                <h2 onclick="window.location.href='http://127.0.0.1:5500/Home.html#about'">Responderei em breve.</h2>
+            </fieldset>
+
+            <div class="home-main-img"> <!--FOTO-MAIN-->
+                <img src="img/mainFoto.png" class="home-main-foto">
+            </div>
+
+
+            <script src="JS/intro.js"></script>
+        </section>
+        
+        <!---->
+        <div id="PDF">
+            <div id="dadosPDF">
+                <hr class="hr1">
+                <div class="PDF-intro"><!--APRESENTAÇÃO-->
+                    <h1 class="PDF-nome" id="h1">Renato Alves de Oliveira</h1>
+                    <p id="p">Sou desenvolvedor em formação e quero contribuir para a sua empresa ou projeto, ampliando
+                        ainda mais meus conhecimentos profissionais, me capacitando em um ambiente de alta
+                        produtividade e te ajudando a alcançar resultados efetivos.</p>
+                    <div class="PDF-link">
+                        <!--QR CODE DO SITE-->
+                        <iframe type="image/jpg" src="img/QRSITE.jpg" href="https://oliveirarenato.com.br/index.html"
+                            width="300" height="300" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"></iframe>
+                    </div>
+                    <p class="link-text">Link para o site.</p>
+                </div>
+                <br>
+                <br>
+                <hr class="hr2">
+                <div class="PDF-cursos"><!--FORMAÇÃO-->
+                    <h2 id="h2">Formação</h2>
+                    <h3 id="h3">Análise e Desenvolvimento de Sistemas</h3>
+                    <p id="p">Ensino Superior - Faculdade Descomplica Previsão de conclusão - 03/2025 (Cursando)</p>
+                    <h3 id="h3">Administração</h3>
+                    <p id="p">Ensino Superior - UNISUAM Previsão de conclusão - 12/2024 (Cursando)</p>
+                </div>
+                <hr class="hr2">
+                <div class="PDF-resume"><!--EXPERIENCIA PROFISSIONAL-->
+                    <h2 id="h2">Experiência</h2>
+
+                    <h3 id="h3">iPlace - Shopping RioSul / Grupo Herval</h3>
+                    <p id="p">06/21</p>
+                    <p id="p">Analísta Técnico</p>
+                    <p id="p">Realizar manutenção em MacBook, Mac Pro, iMac e
+                        iPhone, administrar a assistência técnica junto ao
+                        grupo Herval e a Apple, supervisionar equipe de
+                        técnicos de informática, venda de equipamentos e
+                        serviços Apple e estreitar o relacionamento com o
+                        cliente através de feedback pós-atendimento.
+                    </p>
+
+                    <h3 id="h3">Livraria Leitura / Ouvidor</h3>
+                    <p id="p">10/2020 - 03/2021</p>
+                    <p id="p">Livreiro</p>
+                    <p id="p">Realizar manutenção em MacBook, Mac Pro, iMac e
+                        iPhone, administrar a assistência técnica junto ao
+                        grupo Herval e a Apple, supervisionar equipe de
+                        técnicos de informática, venda de equipamentos e
+                        serviços Apple e estreitar o relacionamento com o
+                        cliente através de feedback pós-atendimento.
+                    </p>
+
+                    <h3 id="h3">Lojas Americanas</h3>
+                    <p id="p">03/2019 - 09/2020</p>
+                    <p id="p">Operador de Loja</p>
+                    <p id="p">Atendimento ao público, vendas físicas e online,
+                        organização de departamentos e estoque, venda de
+                        garantia estendida, conhecimento de sistema
+                        específico da loja.
+                    </p>
+
+                    <h3 id="h3">PC Help Soluções Tecnológicas</h3>
+                    <p id="p">04/2013 - 12/2018</p>
+                    <p id="p">Técnico de Informática - Autônomo</p>
+                    <p id="p">Responsável por efetuar diversos tipos de reparos e
+                        configurações em computadores pessoais e de
+                        empresas, além de atendimento a clientes.</p>
+
+                </div>
+                <hr class="hr2">
+                <div class="PDF-certificados"><!--CERTIFICADOS-->
+                    <h2 id="h2">Certificados</h2>
+                    <ul class="linha">
+                        <!--APPLE-->
+                        <li class="coluna">
+                            <h3 id="h3">iOS & Macintosh</h3>
+                            <p id="p">Apple / iPlace</p>
+                            <p id="p">07/2021</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">MacBook, Imac, MacPro e iPhone</h3>
+                            <p id="p">Apple / iPlace</p>
+                            <p id="p">06/2021</p>
+                        </li>
+                        <!--FIAP-->
+                        <li class="coluna">
+                            <h3 id="h3">Big Data & Analytics</h3>
+                            <p id="p">FIAP Online</p>
+                            <p id="p">02/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Gestão de Infraestrutura de T.I</h3>
+                            <p id="p">FIAP Online</p>
+                            <p id="p">12/2021</p>
+                        </li>
+                        <!--LINKEDIN LEARNING-->
+                        <li class="coluna">
+                            <h3 id="h3">JavaScript - Formação Básica</h3>
+                            <p id="p">LinkedIn Learning</p>
+                            <p id="p">08/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Git & GitHub</h3>
+                            <p id="p">LinkedIn Learning</p>
+                            <p id="p">08/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Fundamentos da Programação</h3>
+                            <p id="p">LinkedIn Learning</p>
+                            <p id="p">09/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Fundamentos da Programação:
+                                Design Orientado a Objetos</h3>
+                            <p id="p">LinkedIn Learning</p>
+                            <p id="p">09/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Descubra Python</h3>
+                            <p id="p">LinkedIn Learning</p>
+                            <p id="p">09/2022</p>
+                        </li>
+                        <!--DESCOMPLICA-->
+                        <li class="coluna">
+                            <h3 id="h3">Programming Basics</h3>
+                            <p id="p">Faculdade Descomplica</p>
+                            <p id="p">06/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Especialista em Arquitetura e Organização de
+                                Computadores</h3>
+                            <p id="p">Faculdade Descomplica</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">DB Devoloper</h3>
+                            <p id="p">Faculdade Descomplica</p>
+                            <p id="p">12/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Object-Oriented Devoloper</h3>
+                            <p id="p">Faculdade Descomplica</p>
+                            <p id="p">03/2023</p>
+                        </li>
+                        <!--ALURA-->
+                        <li class="coluna">
+                            <h3 id="h3">Lógica de Programação: Comece em
+                                lógica com o jogo PONG e JAVASCRIPT</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">09/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Arquitetura e Organização de Computadores</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Linux I: Conhecendo e utilizando o terminal</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">Git & GitHub</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">11/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">HTML5 & CSS3 - 1º</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">HTML5 & CSS3 - 2º</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">HTML5 & CSS3 - 3º</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">10/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">HTML5 & CSS3 - 4º</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">11/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">JavaScript para WEB</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">11/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">JAVA, JRE e JDK</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">12/2022</p>
+                        </li>
+                        <li class="coluna">
+                            <h3 id="h3">JAVA OO - Entendento a Orientação a Objetos</h3>
+                            <p id="p">Alura</p>
+                            <p id="p">12/2022</p>
+                        </li>
+
+                        <li class="coluna" id="escondido">
+                            <h3 id="h3"></h3>
+                            <p id="p"></p>
+                            <p id="p"></p>
+                        </li>
+                    </ul>
+                    <hr class="hr1">
+                </div>
+
+                <style>
+                    #h1 {
+                        font-size: 1.7rem;
+                        color: black;
+                        margin-bottom: 1.5rem;
+                        margin-top: 1.5rem;
+                    }
+
+                    #h2 {
+                        font-size: 1.4rem;
+                        font-weight: bold;
+                        color: black;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+
+                    }
+
+                    #h3 {
+                        font-size: 1.2rem;
+                        color: black;
+                        margin-top: 1.5rem;
+                        margin-bottom: 0.8rem;
+                        font-weight: bold;
+
+                    }
+
+                    #p {
+                        font-size: 1rem;
+                        color: black;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.5rem;
+
+                    }
+
+                    hr {
+                        display: inline-flex;
+                        vertical-align: middle;
+                        align-items: center;
+                        position: relative;
+                        left: auto;
+                        right: auto;
+                        width: 90%;
+                        margin-bottom: 0.5rem;
+                        margin-top: 0.5rem;
+                        font-weight: bolder;
+
+                    }
+
+                    #PDF {
+                        /*CONTEINER DA PAGINA*/
+                        width: 100%;
+                        display: flex;
+                        position: fixed;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: middle;
+                        height: 100%;
+                        overflow-y: scroll;
+                        overflow: hidden;
+                        left: auto;
+                        right: auto;
+
+                    }
+
+                    .hr1 {
+                        width: 85%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        vertical-align: middle;
+                        justify-content: center;
+                        background: linear-gradient(to right, #999999, #404040, #000000, #404040, #999999);
+                        border-width: 2px transparent center no-repeat;
+                    }
+
+                    .hr2 {
+                        margin-top: 1rem;
+                        width: 60%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        vertical-align: middle;
+                        justify-content: center;
+                        border-width: 2px transparent center no-repeat;
+                    }
+
+                    #dadosPDF {
+                        /*CONTEINER DOS DADOS*/
+                        text-align: center;
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        vertical-align: middle;
+                        flex-flow: row wrap;
+                        overflow-y: scroll;
+                        margin-bottom: 8rem;
+                        text-align: center;
+
+                    }
+
+                    .PDF-link {
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: middle;
+                        color: black;
+                        margin-top: 1.5rem;
+                        font-weight: bold;
+
+                    }
+
+                    .link-text {
+                        font-size: 1.2rem;
+
+
+                    }
+
+                    .PDF-intro {
+                        /*BOX DA APRESENTAÇÃO*/
+                        width: 90%;
+                        height: 40%;
+                        text-align: center;
+                        justify-content: center;
+                        padding: 2%;
+                        margin-bottom: 1.5rem;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .PDF-nome {
+                        font-weight: bold;
+                        font-size: 2rem;
+                    }
+
+                    .PDF-cursos {
+                        width: 90%;
+                        height: auto;
+                        margin-bottom: 1.5rem;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                    }
+
+                    .PDF-resume {
+                        width: 90%;
+                        height: auto;
+                        margin-bottom: 1.5rem;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin-left: auto;
+                        margin-right: auto;
+
+
+                    }
+
+                    .PDF-certificados {
+                        width: 90%;
+                        height: auto;
+                        margin-bottom: 1.5rem;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                    }
+
+                    .linha {
+                        display: flex;
+                        flex-flow: row wrap;
+                        vertical-align: middle;
+                        align-items: center;
+                        width: auto;
+                        margin: auto;
+                        padding: auto;
+
+                    }
+
+                    .coluna {
+                        left: auto;
+                        right: auto;
+                        width: 40%;
+                        text-align: center;
+                        display: inline;
+                        align-items: center;
+                        justify-content: center;
+                        margin: auto;
+                        padding: auto;
+
+                    }
+
+                    .escondido {
+                        display: none;
+                    }
+                </style>
+            </div>
+        </div>
+
+        <!---->
+
+        
+      <!--  DOWNLOAD DO PDF     -->
+        <script src="JS/pdf.js"></script>
+    <!------------------------------------>
+    </main>
+    <footer><!--FOOTER-->
+        <fieldset class="footer">
+
+            <h6>
+                Criado por
+            </h6>
+            <h6 class="footer-area">Renato Oliveira.</h6>
+        </fieldset>
+    </footer>
+
+</body>
+
+</html>

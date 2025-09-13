@@ -1,0 +1,355 @@
+/*----------------------------------MAIN--------------------------------------------*/
+body {
+    background: rgb(18, 18, 18);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+    height: auto;
+    overflow-y: hidden;
+
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    top: 22%;
+    opacity: 0.98;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    scroll-behavior: smooth;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-position: 10%;
+    
+
+
+}
+
+main #home-main-area::-webkit-scrollbar {
+    display: none;
+}
+
+/*-------------------------REFERENTE A PAGINA HOME----------------------*/
+#home-main-area {
+    width: 49%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    color: antiquewhite;
+    display: inline-flex;
+    position: relative;
+    float: left;
+    
+
+}
+
+.home-main-img {
+    width: 50%;
+    position: relative;
+    display: flex;
+    object-fit: cover;
+    display: inline-flex;
+    align-items: flex-end;
+    height: 85%;
+    margin-top: 1%;
+}
+
+.home-main-foto {
+    width: 90%;
+    margin-right: auto;
+    margin-top: auto;
+    position: relative;
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.home-main-intro-1 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-bottom: 0.2rem;
+}
+
+.home-main-intro-2 {
+    font-weight: bold;
+    font-size: 1.2;
+    margin-bottom: 0.8rem;
+}
+
+.home-main-intro-3 {
+    margin-top: 0.2rem;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.space {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.space-1 {
+    font-size: 0.7rem;
+}
+
+#click-img {
+    width: 30%;
+    position: relative;
+    display: flex;
+    left: 43%;
+    top: -22%
+}
+
+#click-img-2 {
+    width: 8%;
+    position: relative;
+    display: flex;
+    left: 45%;
+    top: -22%
+}
+
+
+h1 {
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    color: floralwhite;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8%;
+    margin-top: 1.2%;
+
+}
+
+h3 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: floralwhite;
+}
+
+h4 {
+    font-size: 1rem;
+    color: floralwhite;
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+}
+
+h5 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 13px;
+}
+
+
+
+/*------------------    ESCONDER INFORMAÇÕES DENTRO DO BOTÃO    --------------------------*/
+
+#menu_about {
+    position: relative;
+    display: flex;
+    font-size: 2rem;
+    width: 100%;
+    justify-content: center;
+    left: 35%;
+    bottom: 15%;
+}
+
+#pages_about {
+    position: relative;
+    width: 70%;
+    left: 30%;
+    bottom: 15%;
+
+}
+
+.link {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: antiquewhite;
+    width: 50%;
+
+}
+
+#return {
+    display: flex;
+    position: relative;
+    margin-bottom: 180%;
+}
+
+.about {
+    margin-bottom: 2%;
+    font-size: 2rem;
+    color: floralwhite;
+    margin-top: 5%;
+}
+
+.about:hover {
+    transform: scale(1.01);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.check {
+    font-weight: bold;
+    color: green;
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 0.3rem;
+}
+
+#PDF {
+    visibility: hidden;
+}
+
+/*------------------------------------------------------------------------*/
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-9px);
+    }
+}
+
+#flutuante-reverso {
+    animation: none;
+    transition: 0.5s;
+    animation: float 0.8s ease-in-out infinite;
+}
+
+
+/*      RESPONSIVIDADE         */
+
+@media screen and (min-width:1600px) and (max-width: 1800px) {
+    #pages_about {
+        width: 100%;
+        display: inline;
+    }
+
+    #menu_about {
+        width: 200%;
+        display: inline;
+    }
+
+    #click-img {
+        width: 5vw;
+    }
+
+    #click-img-2 {
+        width: 5vw;
+    }
+
+    .home-main-foto {
+        width: 95%;
+
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+    #pages_about {
+        width: 100%;
+        display: inline;
+    }
+
+    #menu_about {
+        width: 200%;
+        display: inline;
+    }
+
+    #click-img {
+        width: 5vw;
+    }
+
+    #click-img-2 {
+        width: 5vw;
+    }
+
+    .home-main-img {
+        height: 78%;
+    margin-top: auto;
+    top: 6%;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+    #click-img {
+        width: 5vw;
+    }
+
+    #click-img-2 {
+        width: 5vw;
+    }
+
+    .home-main-foto {
+        width: 110%;
+
+    }
+
+    #menu_about {
+        width: 200%;
+        display: inline;
+    }
+
+    #pages_about {
+        width: 100%;
+    }
+
+    .home-main-img {
+        height: 78%;
+    margin-top: auto;
+    top: 6%;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .home-main-img {
+        display: none;
+    }
+
+    #home-main-area {
+        width: 100%;
+    }
+
+    #menu_about {
+        left: 20%;
+        display: inline;
+    }
+
+    #pages_about {
+        left: 20%;
+    }
+
+    #click-img {
+        width: 10vw;
+    }
+
+    #click-img-2 {
+        width: 10vw;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+}
+
+
+
+

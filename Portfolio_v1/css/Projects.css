@@ -1,0 +1,213 @@
+#p-main-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(18, 18, 18);
+    justify-content: center;
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 5%;
+
+}
+
+/*---       CARROSEL         ---*/
+.slider {
+    width: 90%;
+    left: 5%;
+    right: auto;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    background: rgb(18, 18, 18);
+    position: relative;
+    display: inline-flex;
+
+
+}
+
+.review {
+    background: rgb(18, 18, 18);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+    padding-top: 2vw;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.review__items {
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35vw;
+    display: flex;
+
+}
+
+.review__items img {
+    width: 80%;
+    border-radius: 10px;
+
+}
+
+.review__items h1 {
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    color: floralwhite;
+}
+
+.review__items h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8%;
+    margin-top: 1.2%;
+}
+
+.review__items h3 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: floralwhite;
+}
+
+.review__items h4 {
+    font-size: 1.2rem;
+    color: snow;
+
+}
+
+.review__items h5 {
+    color: antiquewhite;
+    font-size: 0.7rem;
+    margin: 1%;
+}
+
+.review__items p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    color: antiquewhite;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.space {
+    margin-top: 5%;
+
+}
+
+.slide-text {
+    width: 100%;
+    font-size: 100%;
+}
+
+.review__button {
+    text-align: center;
+    position: relative;
+    bottom: 25vw;
+
+}
+
+
+.review__button button {
+    color: snow;
+    background: rgb(18, 18, 18);
+    font-weight: bolder;
+    border: none;
+    vertical-align: middle;
+    padding-bottom: 1vw;
+}
+
+#next,
+#prev {
+    position: relative;
+    width: 5vw;
+    height: 5vw;
+    font-size: 3vw;
+    vertical-align: middle;
+    text-align: center;
+    padding-bottom: 4%;
+    cursor: pointer;
+
+}
+
+#next {
+    left: 45%;
+
+}
+
+#prev {
+    right: 45%;
+
+}
+
+#next:active {
+    transition: 0.5s;
+    font-size: 2.7vw;
+    color: rgba(255, 255, 255, 0.103)
+}
+
+#prev:active {
+    transition: 0.5s;
+    font-size: 2.7vw;
+    color: rgba(255, 255, 255, 0.103)
+}
+
+.review__items {
+    display: none;
+}
+
+#PDF {
+    visibility: hidden;
+}
+
+.glow {
+    animation: glow infinite 2s ease-in-out;
+}
+
+
+/*            ANIMAÇÃO        */
+
+@keyframes glow {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.01);
+    }
+}
+
+/*-----------------------------------------*/
+
+
+
+/*---           RESPONSIVIDADE          ---*/
+
+@media screen and (min-width: 1400px) {
+    #p-main-area {
+        margin-top: auto;
+        top: 5%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #p-main-area {
+        margin-top: auto;
+        top: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .slider {
+        vertical-align: middle;
+        justify-content: center;
+        margin-top: 15%;
+    }
+}

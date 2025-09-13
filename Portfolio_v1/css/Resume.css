@@ -1,0 +1,314 @@
+/* width */
+.c-main-area::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: black;
+    scroll-behavior: auto;
+
+}
+
+/*   SCROLL BAR SOMENTE NA MAIN  - NÃO FUNCIONA NO MOZILLA */
+/* Track */
+.c-main-area::-webkit-scrollbar-track {
+    background: rgb(18, 18, 18);
+    opacity: 0;
+    width: 5px;
+    height: 5px;
+}
+
+/* Handle */
+.c-main-area::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.075);
+    opacity: 0;
+    border-radius: 8px;
+    scroll-behavior: auto;
+    width: 5px;
+    height: 5px;
+
+
+}
+
+/* Handle on hover */
+.c-main-area::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    opacity: 0;
+
+}
+
+.c-main-area::-webkit-scrollbar-thumb:active {
+    background: #888;
+}
+
+
+/*---------------------------------------------------------------------*/
+
+.c-main-area {
+    width: 100%;
+    height: 75%;
+    left: auto;
+    right: auto;
+    vertical-align: middle;
+    text-align: center;
+    color: antiquewhite;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: 1%;
+}
+
+.certificados-conteiner {
+    width: 70%;
+    left: auto;
+    right: auto;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+#certificados ul li {
+    position: relative;
+    list-style-type: none;
+
+}
+
+.botao-cursos {
+    text-decoration: none;
+    cursor: pointer;
+    justify-content: center;
+    display: inline;
+    left: auto;
+    right: auto;
+}
+
+.linha {
+    display: flex;
+    flex-flow: row wrap;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.frame {
+    width: 150px;
+    height: 100px;
+    float: left;
+    border-radius: 6px;
+
+
+}
+
+.cursos {
+    left: auto;
+    right: auto;
+    width: 42%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: inline-flex;
+    align-items: center;
+    border: solid transparent;
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: -28px 24px 25px -9px rgb(0 0 0);
+
+
+}
+
+.curso {
+    width: 100%;
+    margin-left: auto;
+    justify-content: center;
+
+
+}
+
+#certificados ul li:nth-child(1) {
+    text-align: center;
+    display: inline;
+}
+
+#certificados ul li:nth-child(2) {
+    text-align: center;
+    display: inline;
+}
+
+h1 {
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    color: floralwhite;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8%;
+    margin-top: 1.2%;
+
+}
+
+h3 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: floralwhite;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.trabalho {
+    margin-top: 2rem;
+}
+
+.link-certificado {
+    width: 7%;
+}
+
+p {
+    margin: 0.3rem;
+    color: antiquewhite;
+}
+
+#formacao {
+    border: solid transparent;
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: -28px 24px 25px -9px rgb(0 0 0);
+    width: 60%;
+    left: auto;
+    right: auto;
+    position: relative;
+    display: inline-flex;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+#experiencia {
+
+    border: solid transparent;
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: -28px 24px 25px -9px rgb(0 0 0);
+    width: 60%;
+    position: relative;
+    display: inline-flex;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.certs {
+    margin-bottom: 3rem;
+}
+
+.style {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+
+}
+
+
+#formacao:hover,
+#experiencia:hover,
+#formacao:focus,
+#experiencia:focus,
+.cursos:hover,
+.cursos:focus {
+    box-shadow: -28px 24px 25px -9px rgba(255, 255, 255, 0.205);
+    transform: translateY(-6px);
+    transition: 0.5s;
+
+}
+
+#PDF {
+    visibility: hidden;
+}
+
+
+/*------------------------------------------------------------------------*/
+
+@media screen and (min-width: 400px) and (max-width: 1300px) {
+    main {
+        width: 100%;
+        height: 120%;
+        top: 20%;
+    }
+
+    .c-main-area {
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .cursos {
+        width: 80%;
+
+    }
+
+    footer {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        transform: scale(0.8);
+        justify-content: center;
+        top: 7%;
+        width: 100%;
+        height: 120%;
+
+    }
+
+    .c-main-area {
+        width: 100%;
+        height: 85%;
+        top: 0;
+        left: 0;
+        position: relative;
+
+    }
+
+    .frame {
+        transform: scale(0.7);
+    }
+
+    #formacao,
+    #experiencia {
+        width: 80%;
+    }
+
+    #certificados {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .certificados-conteiner {
+        left: auto;
+        right: auto;
+    }
+
+    .certs {
+        margin-left: 15%;
+        width: 100%;
+        justify-content: center;
+        display: inline-flex;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+    .c-main-area {
+        top: 15vw;
+
+    }
+}
